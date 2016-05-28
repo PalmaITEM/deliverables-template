@@ -1,0 +1,131 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% First Page
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{{images/}}
+
+\newcommand{\DelTitle}{Title of this deliverable}
+\newcommand{\DelNumber}{DX.X}
+\newcommand{\DelVersion}{0.X/1.0}
+\newcommand{\footertext}{\raisebox{3mm}{Deliverable \DelNumber}}
+\setlength{\footheight}{36pt}
+\newcommand{\footerlogo}{\raisebox{3mm}{\leavevmode\includegraphics[width=2cm]{SINet}}}
+\clearscrheadfoot
+\pagestyle{empty}
+
+
+% \begin{tikzpicture}[overlay,remember picture]
+%   \draw [line width=1pt]
+%   ($ (current page.north west) + (1cm,-1cm) $)
+%   rectangle
+%   ($ (current page.south east) + (-1cm,1cm) $);
+% \end{tikzpicture}
+
+\definecolor{SINetblue}{HTML}{07505B} 
+\newcolumntype{C}{ >{\centering\arraybackslash} m{4cm} }
+
+\begin{center}
+Horizon 2020
+\vspace{2cm}
+
+  \begin{center}
+
+
+  % H2020 has no logo and no visual identity
+
+  \includegraphics[width=0.7\textwidth]{images/SINet}
+  \vspace{2mm}
+
+  \end{center}
+  \vspace{1cm}
+  {\Large Project title: Software-defined Intermittent Networking\\}
+  \vspace{2cm}
+  
+  \begin{spacing}{2.5}
+    \textbf{\Huge \DelTitle}\\\vspace{10mm}
+    \textbf{\Large Deliverable number: \DelNumber} \\\vspace{10mm} 
+    {\large Version \DelVersion}
+  \end{spacing}
+  
+  \vspace*{\fill}
+
+  %just to avoid warning :)
+  \newcommand\undefcolumntype[1]{\expandafter\let\csname NC@find@#1\endcsname\relax}
+  \newcommand\forcenewcolumntype[1]{\undefcolumntype{#1}\newcolumntype{#1}}
+  \forcenewcolumntype{C}{ >{\arraybackslash} m{3cm} }
+
+
+  \begin{tabular}{C@{\hspace*{0cm}}l}
+    \includegraphics[scale=0.2]{images/logos/EU_Flag_320_213} &
+    \begin{tabular}{l}
+    {Funded by the European Union’s Horizon 2020 research and innovation programme}\\
+    {under the Marie Sklodowska-Curie Grant Agreement No. 699924}\\
+    \end{tabular}
+  \end{tabular}
+\end{center}
+
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Second Page 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\headheight}{1cm}
+\setlength{\footskip}{18mm}
+\addtolength{\textheight}{-\footskip}
+\pagestyle{empty}
+
+\begin{flushleft}
+  \begin{tabular}{ll}
+    \textbf{Project Acronym:}       &   SINet \\
+    \textbf{Project Full Title:}    &   Software-defined Intermittent Networking  \\
+    \textbf{Call:}                  &   H2020-MSCA-IF-2015 \\ 
+%    \textbf{Topic:}                 &   ICT-10-2015 \\
+%    \textbf{Type of Action:}        &   RIA \\
+    \textbf{Grant Number:}          &   699924 \\
+    \textbf{Project URL:}           &  \url{http://sinet.dpalma.eu} 
+  \end{tabular}
+
+
+
+% define "struts", as suggested by Claudio Beccari in
+%    a piece in TeX and TUG News, Vol. 2, 1993.
+\newcommand\Tstrut{\rule{0pt}{2.6ex}}         % = `top' strut
+\newcommand\Bstrut{\rule[-0.9ex]{0pt}{0pt}}   % = `bottom' strut
+
+  \begin{tabular}{|l|p{125mm}|}\hline
+    \Tstrut\Bstrut Editor:& XXX, XXX-Institution\\\hline
+    \Tstrut\Bstrut Deliverable nature:& Report (R) \\\hline
+    \Tstrut\Bstrut Dissemination level:& Public (PU)\\\hline
+    \Tstrut\Bstrut Contractual Delivery Date:& XXX\\\hline
+    \Tstrut\Bstrut Actual Delivery Date& XXX\\\hline
+    % \Tstrut\Bstrut Suggested Readers:&Project partners, future community-lab.net users\\\hline
+    \Tstrut\Bstrut Number of pages:&\pageref{finalpg}\\\hline
+    \Tstrut\Bstrut Keywords:& XXX \\\hline
+    \Tstrut Authors:&
+    \begin{tabular}[t]{l}
+      XXX - YYY, Institution \\
+      XXX - YYY, Institution \\
+      XXX - YYY, Institution \\
+      XXX - YYY, Institution \Bstrut \\
+    \end{tabular}\\\hline
+    \Tstrut\Bstrut Peer review: &
+    \begin{tabular}[t]{l}
+		ZZZ - Institution\\
+	\end{tabular}\\\hline
+  \end{tabular}
+\end{flushleft}
+
+\section*{Abstract}
+Provide a short description, highlight the topics considered in the deliverable.
+
+The abstract must be self-contained, without abbreviations, footnotes, or references. It should be a microcosm of the full deliverable.
+
+The abstract must be between 150-250 words. Be sure that you adhere to these limits.
+
+The abstract must be written as one paragraph, and should not contain displayed mathematical equations or tabular material.
+
+The abstract should include three or four different keywords or phrases, as this will help readers to find it. It is important to avoid over-repetition of such phrases as this can result in a page being rejected by search engines.
+
+Ensure that your abstract reads well and is grammatically correct.
+\clearpage
+

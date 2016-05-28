@@ -1,0 +1,107 @@
+\documentclass{SINet}
+\usepackage{ifthen}
+\usepackage[printonlyused,nohyperlinks]{acronym}
+\usepackage{units}
+
+\usepackage{todonotes}
+\usepackage[utf8]{inputenc}
+\usepackage{siunitx}
+\usepackage[tight,footnotesize]{subfigure}
+%\usepackage[backend=biber]{biblatex}
+%\addbibresource{./bib/references.bib}
+\usepackage{csquotes}
+\usepackage{dirtytalk}
+\usepackage{supertabular}
+\usepackage[section]{placeins}
+
+\usepackage[
+    type={CC},
+    modifier={by-sa},
+    version={3.0},
+    imagewidth={10em},
+]{doclicense}
+
+\newcommand{\img}{./img}
+\newcommand{\bib}{./bib}
+
+\newcommand{\e}[1]{\mbox{e}^{#1}}
+\graphicspath{{figures/}}
+
+
+
+\begin{document}
+
+%% Enter the deliverable information  in this document (tittle.tex)	
+\input{title}
+
+
+
+
+% \oddsidemargin=5mm
+% \evensidemargin=5mm
+% \textwidth=30cm
+
+% \topmargin=0cm
+% \textheight=40\baselineskip
+\setcounter{tocdepth}{2}
+
+\tableofcontents
+\listoffigures
+\begingroup
+\let\clearpage\relax
+\listoftables
+\endgroup
+
+%% SHOULD be included if the deliverable becomes large
+\input{executivesummary}
+
+\input{acronyms}
+
+% ------------------------
+% Chapter
+% ------------------------
+
+\clearscrheadfoot 
+
+% uncomment for book mode
+%\lofoot{\footerlogo}
+%\refoot{\footerlogo}
+%\lefoot{\footertext}
+%\rofoot{\footertext}
+
+%\rohead{\pagemark}
+%\lohead{\DelTitle}
+%\lehead{\pagemark}
+%\rehead{\DelTitle}
+
+%\cfoot[\pagemark]{}
+
+\lofoot[\footerlogo \hspace{10pt} \footertext]{\footerlogo \hspace{10pt} \footertext}
+\lefoot[\footerlogo \hspace{10pt} \footertext]{\footerlogo \hspace{10pt} \footertext}
+
+\refoot[\pagemark]{\pagemark}
+\rofoot[\pagemark]{\pagemark}
+
+\rohead{\rightmark}
+\rehead{\rightmark}
+
+\lohead{\leftmark}
+\lehead{\leftmark}
+
+
+
+
+\setcounter{page}{1}
+\pagestyle{scrheadings}
+
+\input{chapters/introduction}
+\input{chapters/chapter-XXX}
+\input{chapters/conclusions}
+
+\bibliography{bib/references}
+\appendix
+\input{appendix.tex}
+\input{back.tex}
+
+%\printbibliography
+\end{document}

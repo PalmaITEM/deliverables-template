@@ -1,0 +1,71 @@
+%% COMMANDS
+%%
+%% \acresetall	flushes the ’memory’ of the macro \ac (ie all "used" marks flushed)
+%%
+%% \ac{label}	singular (first time Full Name + (ACRO) and mark as used)
+%% \acp{label}	plural (as \ac but makes short and/or long forms into plurals)
+%%
+%% \acs{lable}	short (ACRO)
+%% \acf{lable}	“full acronym” (Full Name + (ACRO))
+%% \acl{lable}	long (_without_ ACRO)
+%%
+%% \acsp{label}	short plural (ACROs)
+%% \acfp{label}	“full acronym” plural (Full Names + (ACROs))
+%% \aclp{label}	long plural (_without_ ACRO)
+%%
+%% \acrodef{label}[acronym]{written out form}	definition
+%%		for example \acrodef{etacar}[$\eta$ Car]{Eta Carinae},
+%%		with the restriction that the label should be simple ASCII
+
+
+%% PACKAGE & OPTIONS
+%% acronym package must be loaded (in the preamble):
+%%    \usepackage[option1,option2,etc.]{acronym}
+%% OPTIONS:
+%%    footnote		The option footnote makes the full name appear as a
+%%			footnote.
+%%    nohyperlinks	If hyperref is loaded, all acronyms will link to their
+%%			glossary entry. With the option nohyperlinks these
+%%			linkscan be suppressed.
+%%    printonlyused	Only list used acronyms
+%%    withpage		In printonlyused-mode show the page number where
+%%			each acronym was first used.
+%%    smaller		Make the acronym appear smaller.
+%%    dua			The option dua stands for “don’t use acronyms”. It
+%%			leads to a redefinition of \ac and \acp, making the
+%%			full name appear all the time and suppressing all
+%%			acronyms but the explicity requested by \acf or \acfp.
+%%    nolist		The option nolist stands for “don’t write the list of
+%%			acronyms”.
+
+
+%% INCLUSION
+%%
+\chapter*{List of Acronyms}
+\label{sec:acronyms}
+
+\begin{acronym}[OMNeTXX] %width of the longest acronym should be matched here
+
+  \acro{h2o}[$\mathrm{H_2O}$]{water}
+  \acro{CN}{Community Network}
+  \acro{COTS}{Commercial off-the-shelf}
+  \acro{DNS}{Domain Name System}
+  \acro{HTTP}{Hypertext Transfer Protocol}
+  \acro{JTAG}{Joint Test Action Group \acroextra{(IEEE 1149.1 Standard Test Access Port and Boundary-Scan Architecture)}}
+  \acro{NIC}{Network Interface Card}
+  \acro{NTP}{Network Time Protocol}
+  \acro{OLSR}{Optimized Link State Routing Protocol}
+  \acro{OLSRv2}{Optimized Link State Routing Protocol version 2}
+  \acro{OLSRd}{Optimized Link State Routing Protocol daemon}
+  \acro{OMF}{cOntrol, Management and Measurement Framework}
+  \acro{PoE}{Power over Ethernet}
+  \acro{SSH}{Secure Shell}
+  \acro{UCI}{Unified Configuration Interface}
+  \acro{USB}{Universal Serial Bus}
+  \acro{WNIC}{Wireless Network Interface Card}
+  \acro{ns-3}{Network Simulator 3}
+  \acro{OMNeT++}{Objective Modular Network Testbed in C++}
+
+
+\end{acronym}
+\clearpage
