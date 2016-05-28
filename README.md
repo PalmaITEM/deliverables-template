@@ -25,7 +25,7 @@ Distributed under a Creative Commons license. See ``LICENSE`` for more informati
 
 ## About
 
-This template results from the work conducted in the Software-defined Intermittent Networking [SINet](sinet.dpalma.eu) project.
+This template results from the work conducted in the Software-defined Intermittent Networking [SINet](http://sinet.dpalma.eu) project.
 
 The aim of this project is to define a networking solution for heterogeneous intermittent networks. The focus is on challenging environments such as the Arctic, addressing multi-disciplinary fields beyond surface communications, including space, airborne and underwater systems.
 
